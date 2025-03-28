@@ -1,5 +1,5 @@
 "use client";
-import {UseRouter} from 'next/navigation';
+import {useRouter} from 'next/navigation';
 import React from 'react';
 
 export default function navbar() {
