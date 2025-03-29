@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '@/app/components/ui/navbar'
+import Navbar from '@/app/components/ui/Navbar'
 
 export default function wallet() {
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+    <div className="min-h-screen bg-[#1a1c2e] p-4 md:p-8">
   <div className="max-w-2xl mx-auto">
     {/* Balance Section */}
-    <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm mb-4 md:mb-6">
+    <div className="bg-[#2e3248] rounded-xl p-4 md:p-6 shadow-sm mb-4 md:mb-6">
       <h2 className="text-xs md:text-sm text-gray-500 mb-1">Total Balance</h2>
-      <div className="text-2xl md:text-3xl font-bold text-gray-800">$2,450.50</div>
+      <div className="text-2xl md:text-3xl font-bold text-white-400">$2,450.50</div>
     </div>
 
     {/* Action Buttons - Smaller on Mobile */}
@@ -35,8 +35,8 @@ export default function wallet() {
       </button>
     </div>
 
-    <div className="bg-white rounded-xl shadow-sm p-6">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">Recent Transactions</h3>
+    <div className="bg-[#2e3248] rounded-xl shadow-sm p-6">
+      <h3 className="text-lg font-semibold text-white mb-4">Recent Transactions</h3>
       
       <div className="space-y-4 max-h-96 overflow-y-auto">
         {[
@@ -53,7 +53,7 @@ export default function wallet() {
                 {tx.type === 'sent' ? '↑' : tx.type === 'received' ? '↓' : '$'}
               </div>
               <div>
-                <div className="font-medium text-gray-800">
+                <div className="font-medium text-white-400">
                   {tx.type === 'sent' ? `Sent to ${tx.to}` : 
                    tx.type === 'received' ? `Received from ${tx.from}` : 
                    tx.details}

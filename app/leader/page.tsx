@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/ui/navbar'
+import Navbar from '@/app/components/ui/Navbar'
 
 export default function leader() {
   return (
