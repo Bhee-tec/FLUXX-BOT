@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '@/app/components/ui/header';
+import Navbar from '@/app/components/ui/header';
 import Game from '@/app/components/ui/game';
 import Gamedata from '@/app/components/ui/gamedata';
 export default function page() {
@@ -10,6 +11,7 @@ export default function page() {
     <Gamedata />
   <Game />
   </div>
+      <Navbar />
 </div>
   )
 }
