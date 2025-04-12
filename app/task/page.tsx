@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/ui/Navbar'
+import Navbar from '@/components/ui/Navbar'
 
 export default function task() {
   return (

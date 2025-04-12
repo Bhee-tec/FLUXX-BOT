@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { ClipboardDocumentIcon, UserGroupIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
-import Navbar from '@/app/components/ui/Navbar'
+import Navbar from '@/components/ui/Navbar'
 
 interface ReferralStats {
   totalReferrals: number;
