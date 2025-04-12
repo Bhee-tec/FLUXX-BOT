@@ -1,14 +1,15 @@
-import React from 'react';
+import React from 'react'
 import Navbar from '@/components/ui/Navbar';
 import Game from '@/components/ui/Game';
-import GameData from '@/components/ui/GameData';
+import Gamedata from '@/components/ui/GameData';
 
-export default function Page() {
+export default function page() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#1a1c2e] text-white p-4 font-sans">
+    <div className="flex flex-col min-h-screen  bg-[#1a1c2e] text-white p-4 font-sans">
+  <div className="max-h-fit bg-gradient-to-br p-4">
+  <Game />
+  </div>
       <Navbar />
-      <Game />
-      <GameData score={0} currentMoves={0} totalMoves={0} />
-    </div>
-  );
+</div>
+  )
 }
