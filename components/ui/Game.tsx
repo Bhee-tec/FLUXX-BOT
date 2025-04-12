@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import GameData from '@/components/ui/GameData'; // Import GameData component
-import Header from '@/components/ui/Header'; // Import Header component
+import GameData from 'components/ui/GameData'; // Import GameData component
+import Header from 'components/ui/Header'; // Import Header component
 
 const COLORS = ['bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-purple-500', 'bg-orange-500'] as const;
 type Color = typeof COLORS[number];

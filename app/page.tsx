@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '@/components/ui/Navbar';
-import Game from '@/components/ui/Game';
-import Gamedata from '@/components/ui/GameData';
+import Navbar from 'components/ui/Navbar';
+import Game from 'components/ui/Game';
+import Gamedata from 'components/ui/GameData';
 
 export default function page() {
   return (
