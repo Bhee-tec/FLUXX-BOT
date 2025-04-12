@@ -2,7 +2,7 @@
 import {useRouter} from 'next/navigation';
 import React from 'react';
 
-export default function navbar() {
+export default function Navbar() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
   
@@ -35,6 +35,25 @@ export default function navbar() {
     </svg>
       <span className="text-xs mt-1">Leaders</span>
     </button>
+
+    <button onClick={() => router.push('/referrals')} className="flex flex-col items-center p-2 text-white">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="w-6 h-6 text-[#3244a7]"
+>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 3v9m0 0l-3-3m3 3l3-3m9 3a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+      <span className="text-xs mt-1">Referrals</span>
+    </button>
+
     <button onClick={() => router.push('/wallet')} className="flex flex-col items-center p-2 text-white">
     <svg className="w-6 h-6 text-[#3244a7]" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Wallet">
     <path d="M5 4h14a3 3 0 013 3v10a3 3 0 01-3 3H5a3 3 0 01-3-3V7a3 3 0 013-3zm12 4H7a1 1 0 000 2h10a1 1 0 000-2zm-4 4H7a1 1 0 000 2h6a1 1 0 000-2z"/>

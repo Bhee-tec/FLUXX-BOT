@@ -1,0 +1,19 @@
+datasource db {
+  provider = "mongodb"  // Use MongoDB as the database provider
+  url      = env("DATABASE_URL")  // The database URL comes from your .env file
+}
+
+generator client {
+  provider = "prisma-client-js"  // Prisma Client for JavaScript
+}
+
+model User {
+  id          String   @id @default(uuid()) @map("_id")  // Use _id for MongoDB default identifier
+  telegramId  Int      @unique  // Telegram ID must be unique
+  username    String?  // Optional
+  firstName   String?  // Optional
+  lastName    String?  // Optional
+  points      Int      @default(0)  // Default points is 0
+  createdAt   DateTime @default(now())  // Automatically set the createdAt timestamp
+  updatedAt   DateTime @updatedAt  // Automatically update the updatedAt timestamp
+}
