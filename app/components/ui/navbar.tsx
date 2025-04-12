@@ -3,11 +3,10 @@ import {useRouter} from 'next/navigation';
 import React from 'react';
 
 export default function Navbar() {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
   
   return (
-    <>
+    <nav>
     <div className="fixed bottom-0 left-0 right-0 bg-[#2e3248] border-t border-[#3a3f5a]">
   <div className="flex justify-around items-center p-2">
 
@@ -62,6 +61,6 @@ export default function Navbar() {
     </button>
   </div>
 </div>
-</>
+</nav>
   );
 }
