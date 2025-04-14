@@ -5,7 +5,7 @@ import Gamedata from 'components/ui/GameData';
 
 export default function page() {
   return (
-    <div className="flex flex-col min-h-screen  bg-[#1a1c2e] text-white p-4 font-sans">
+    <div className="flex flex-col min-h-screen  bg-[#06060F] text-white p-4 font-sans">
   <div className="max-h-fit bg-gradient-to-br p-4">
   <Game />
   </div>
